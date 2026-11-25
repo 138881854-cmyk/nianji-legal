@@ -1,262 +1,116 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark light">
-<meta name="robots" content="index,follow">
-<title>念记 隐私政策 / Privacy Policy</title>
-<meta name="description" content="念记如何处理录音、文字、会员代转与第三方模型服务，以及你的删除与查询权利。">
-<meta property="og:title" content="念记 隐私政策 / Privacy Policy">
-<meta property="og:description" content="念记如何处理录音、文字、会员代转与第三方模型服务，以及你的删除与查询权利。">
-<meta property="og:type" content="website">
-<style>
-:root{
-  --ink:#0d0e10; --deep:#17191b; --paper:#eae9e6; --ivory:#f7f7f5;
-  --wine:#4d1422; --gold:#b7a691; --line:#26272a; --muted:#8d8e90;
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0; background:var(--ink); color:var(--paper);
-  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
-  font-size:17px; line-height:1.85; letter-spacing:.01em;
-  -webkit-font-smoothing:antialiased;
-}
-a{color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(183,166,145,.35)}
-a:hover{border-bottom-color:var(--gold)}
-.top{border-bottom:1px solid var(--line)}
-.top .in{max-width:62ch; margin:0 auto; padding:20px 22px; display:flex; justify-content:space-between; gap:16px; align-items:baseline}
-.brand{font-size:13px; letter-spacing:.2em; color:var(--paper)}
-.brand span{color:var(--muted); letter-spacing:.16em; margin-left:10px; font-size:11px}
-.top nav{font-size:12.5px; letter-spacing:.04em; display:flex; gap:18px}
-.top nav a{border:0; color:var(--muted); padding:6px 0}
-.top nav a:hover{color:var(--paper)}
-main{max-width:62ch; margin:0 auto; padding:0 22px 40px}
-header.head{padding:56px 0 8px}
-.eyebrow{font-size:11.5px; letter-spacing:.22em; color:var(--gold); text-transform:uppercase; margin:0 0 22px}
-h1{font-size:clamp(34px,7.2vw,50px); line-height:1.08; letter-spacing:-.075em; font-weight:680; margin:0 0 18px}
-.stamp{font-size:13px; color:var(--muted); letter-spacing:.03em; margin:0}
-.lede{border-left:3px solid var(--wine); background:var(--deep); padding:20px 22px; margin:36px 0 0; font-size:16.5px; line-height:1.8}
-.lede p{margin:0}
-.lede strong{font-weight:650; color:var(--ivory)}
-h2{font-size:21px; line-height:1.35; letter-spacing:-.035em; font-weight:650; margin:56px 0 6px; padding-top:22px; border-top:1px solid var(--line)}
-h2:first-of-type{margin-top:44px}
-h3{font-size:16.5px; font-weight:650; letter-spacing:-.01em; margin:30px 0 4px}
-p{margin:14px 0 0}
-ul,ol{margin:14px 0 0; padding-left:20px}
-li{margin:8px 0}
-li::marker{color:var(--muted)}
-.rows{margin:20px 0 0; border-bottom:1px solid var(--line)}
-.row{display:grid; grid-template-columns:11.5rem 1fr; gap:18px; padding:16px 0; border-top:1px solid var(--line); align-items:start}
-.row .k{font-size:14.5px; font-weight:650; letter-spacing:-.01em; color:var(--ivory); line-height:1.6}
-.row .v{font-size:15.5px; line-height:1.8; color:var(--paper)}
-.row .v .sub{display:block; color:var(--muted); font-size:13.5px; margin-top:4px}
-.toc{margin:34px 0 0; padding:0; list-style:none; columns:2; column-gap:28px; font-size:14.5px}
-.toc li{margin:0 0 10px; break-inside:avoid}
-.toc a{border:0; color:var(--paper)}
-.toc a:hover{color:var(--gold)}
-.toc a::before{content:"— "; color:var(--muted)}
-.note{font-size:14px; color:var(--muted); line-height:1.8}
-.tag{display:inline-block; font-size:11.5px; letter-spacing:.12em; color:var(--gold); border:1px solid rgba(183,166,145,.4); padding:2px 8px; margin-left:10px; vertical-align:middle}
-footer{border-top:1px solid var(--line); margin-top:64px; padding:30px 0 72px; font-size:13px; color:var(--muted); line-height:1.85}
-footer .in{max-width:62ch; margin:0 auto; padding:0 22px}
-footer p{margin:6px 0 0}
-.cards{display:grid; gap:1px; background:var(--line); border:1px solid var(--line); margin:40px 0 0}
-.card{background:var(--ink); padding:26px 24px; display:block; border:0}
-.card:hover{background:var(--deep)}
-.card .t{font-size:19px; font-weight:650; letter-spacing:-.03em; color:var(--ivory); margin:0}
-.card .d{font-size:14.5px; color:var(--muted); margin:8px 0 0; line-height:1.7}
-.card .go{font-size:12px; letter-spacing:.16em; color:var(--gold); margin-top:16px; display:block}
-.warn{border:1px solid #3a2a2c; background:#141113; padding:18px 20px; margin:26px 0 0; font-size:15px; color:var(--paper)}
-.meta{font-size:13px; color:var(--muted); margin-top:8px}
-@media (max-width:640px){
-  body{font-size:16.5px}
-  .row{grid-template-columns:1fr; gap:6px}
-  .toc{columns:1}
-  header.head{padding-top:38px}
-  .top .in{flex-direction:column; gap:8px}
-  .top nav{gap:16px}
-}
-@media print{
-  body{background:#fff; color:#111; font-size:10.5pt; line-height:1.7}
-  .top{border-bottom:1px solid #ccc}
-  a{color:#111; border:0; text-decoration:underline}
-  .lede{background:#f4f4f2; border-left:3px solid #4d1422; color:#111}
-  .row{border-color:#ddd}
-  h2{border-color:#ccc; page-break-after:avoid}
-  .card{background:#fff}
-  .eyebrow{color:#4d1422}
-  footer{color:#555}
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐私政策 — 念记 · 美若清</title>
+  <meta name="description" content="了解念记的本机录音与文字保存、可选云端模型、设备钥匙串、Apple Watch 交接、导入导出、删除方式和隐私联系方式。">
+  <meta property="og:title" content="隐私政策 — 念记 · 美若清">
+  <meta property="og:description" content="了解念记的本机录音与文字保存、可选云端模型、设备钥匙串、Apple Watch 交接、导入导出、删除方式和隐私联系方式。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="美若清">
+  <meta name="theme-color" content="#f8f6f0">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<div class="top"><div class="in">
-  <a class="brand" href="./index.html" style="border:0;color:#eae9e6">念记<span>NIANJI</span></a>
-  <nav><a href="./privacy.html">隐私政策</a><a href="./support.html">支持</a></nav>
-</div></div>
-
-<main>
-<header class="head">
-  <p class="eyebrow">NIANJI · 隐私政策 / Privacy Policy</p>
-  <h1>隐私政策</h1>
-  <p class="stamp">最后更新：2026年11月25日　·　生效日期：2026年11月25日　·　适用 念记 1.2.6（24）</p>
-</header>
-
-<div class="lede"><p><strong>一句话说完：</strong>念记不注册也能用，录音和文字默认只存在你自己的 iPhone 上。只有你亲自填了某个语音服务的密钥，录音才会由你的手机直接发到那一个地址。以后上线会员套餐，录音和文字会经过我们的服务器转发，但我们只在内存里转发——不存、不看、不训练。</p></div>
-
-<ol class="toc">
-  <li><a href="#who">一、本政策与处理者</a></li>
-  <li><a href="#what">二、我们处理哪些信息</a></li>
-  <li><a href="#where">三、录音和文字去哪里</a></li>
-  <li><a href="#third">四、第三方与委托处理</a></li>
-  <li><a href="#member">五、账号、会员与支付</a></li>
-  <li><a href="#perm">六、系统权限</a></li>
-  <li><a href="#keep">七、保存期限</a></li>
-  <li><a href="#delete">八、删除与注销</a></li>
-  <li><a href="#rights">九、你的权利</a></li>
-  <li><a href="#kids">十、未成年人</a></li>
-  <li><a href="#sec">十一、安全与事件通知</a></li>
-  <li><a href="#update">十二、政策更新</a></li>
-  <li><a href="#contact">十三、联系我们</a></li>
-</ol>
-
-<h2 id="who">一、本政策与处理者</h2>
-<p>本政策适用于在 Apple App Store 发布的 iOS App「念记」（Bundle ID：com.nianji.journal）及其配套 Apple Watch App，也包括我们提供的会员服务。个人信息处理者：<strong>深圳美若轻生物科技有限公司</strong>（MEIRUOQING）。适用范围：中华人民共和国大陆地区。</p>
-<p>我们依据《中华人民共和国个人信息保护法》《数据安全法》《网络安全法》《App 违法违规收集使用个人信息行为认定方法》，以及 Apple App 审核指南 5.1.1（数据收集和存储）与 5.1.2（数据使用和共享）制定本政策。</p>
-<p>念记目前有两种工作方式，本政策对两种都作了说明：<strong>直连</strong>（当前版本，不需要注册，数据不经过我们）与<strong>会员代转</strong>（会员功能上线后生效）。会员功能未上线时，与会员相关的条款不适用。</p>
-<p class="note">个人信息处理者名称、联系方式、处理目的、处理方式、信息种类与保存期限，都在本页逐项写明。我们只在中华人民共和国境内存储个人信息。</p>
-
-<h2 id="what">二、我们处理哪些信息</h2>
-<div class="rows">
-  <div class="row"><div class="k">录音（含你的声纹）</div><div class="v">你按下「闪念」或开启「全天记录」时由麦克风采集；Apple Watch 也可以单独录音，再交给配对的 iPhone。<span class="sub">录音可能包含你本人和在场其他人的声音，属于敏感个人信息。是否录音、录多久，每一次都由你决定。</span></div></div>
-  <div class="row"><div class="k">转写文字</div><div class="v">录音转成的文字、你输入或导入的文字，以及由这些文字整理的当日回顾与卡片。<span class="sub">这些文字构成你的资料库，存在本机。</span></div></div>
-  <div class="row"><div class="k">接口地址与模型名</div><div class="v">你在「设置 → 云端模型」里填写的服务地址和模型 ID，本身不含密钥。<span class="sub">存在本机偏好设置。</span></div></div>
-  <div class="row"><div class="k">API 密钥</div><div class="v">你从服务商申请、自己填进来的密钥。<span class="sub">只写入 iOS 钥匙串，标记为「仅本设备、首次解锁后可读」，不写日志、不导出、不同步、我们无法读取。</span></div></div>
-  <div class="row"><div class="k">会员与交易信息</div><div class="v">购买会员后才会产生：会员标识、订阅状态与到期时间、Apple 交易标识、套餐用量（已用音频时长或文字字数）。<span class="sub">我们拿不到你的银行卡号、账单地址或 Apple ID 密码——支付由 Apple 完成。</span></div></div>
-  <div class="row"><div class="k">使用偏好</div><div class="v">例如是否自动回顾、归档目录、上次选择的接口类型。<span class="sub">存在本机偏好设置。</span></div></div>
-</div>
-<h3>我们不处理的信息</h3>
-<p>姓名、身份证件、通讯录、精确或粗略位置、相册、日历、健康数据、剪贴板、广告标识符（IDFA）。我们不读取你的设备指纹，不接入任何第三方广告、统计或崩溃采集 SDK，也不做用户画像。</p>
-<div class="warn"><strong>关于敏感个人信息的单独同意：</strong>录音可能包含声纹，属于敏感个人信息。依据《个人信息保护法》第二十九条，我们会在你第一次录音前，用单独的弹窗告诉你「录音会做什么、会发到哪里」，取得你的单独同意后才开始采集。你拒绝，仍然可以使用不需要录音的其他功能。</div>
-
-<h2 id="where">三、录音和文字去哪里</h2>
-<h3>3.1　直连（当前版本）</h3>
-<div class="rows">
-  <div class="row"><div class="k">本机保存</div><div class="v">录音临时文件、转写文字、资料库数据库与 Markdown 归档，都写在念记的应用沙盒内（Application Support 目录）。你可以在「资料库」查看、编辑、删除；念记已开启系统文件共享，你也可以用「文件」App 直接访问。</div></div>
-  <div class="row"><div class="k">发往哪里由你决定</div><div class="v">念记出厂时在「语音转写」里预填了千问语音接口的地址和模型名，<strong>但密钥必须由你自己填写并保存</strong>。在你保存密钥并发起转写之前，念记不会向你没有配置过的服务发送任何录音。你也可以改成任何兼容的接口，或你自己的服务器。</div></div>
-  <div class="row"><div class="k">每次发送什么</div><div class="v">每个请求最多一段 110 秒的音频（16 kHz 单声道 WAV 或 M4A）、模型名与必要参数。不发送设备标识符、位置、通讯录或账号信息。请求走 HTTPS，使用系统证书校验。</div></div>
-  <div class="row"><div class="k">本机补转</div><div class="v">云端拒收、超时或没有返回文字时，念记调用 iOS 自带的语音识别在设备上补转，原音仍留在本机。这条路径不把录音交给任何第三方。</div></div>
-  <div class="row"><div class="k">回顾与提示词</div><div class="v">只有你配置了「回顾总结」接口，并且手动生成或开启自动回顾时，才会把当天的文字发往那个地址。不配置就只在本地整理。</div></div>
-</div>
-
-<h3>3.2　会员代转（会员功能上线后）<span class="tag">尚未上线</span></h3>
-<p>购买会员后，你可以把转写和撰写交给我们的服务器代为转发，不必自己申请密钥。此时的处理方式是：</p>
-<div class="rows">
-  <div class="row"><div class="k">转发过程</div><div class="v">录音或文字先传到我们的服务器，再由服务器转发给你套餐内的模型服务，结果原路返回到你的手机。</div></div>
-  <div class="row"><div class="k">我们不保存内容</div><div class="v">转发在内存中完成，请求结束即丢弃。我们不把录音、逐字稿或撰写内容写入磁盘，不建副本，不做人工查看，不做人工听写。</div></div>
-  <div class="row"><div class="k">只留计费记录</div><div class="v">为了计费和故障排查，我们只保留：请求时间、请求类型（转写或撰写）、音频时长或文字字数、HTTP 状态码、你的会员标识。<strong>这些记录不包含你的录音和文字内容。</strong>保存 12 个月，到期自动删除。</div></div>
-  <div class="row"><div class="k">你可以不用</div><div class="v">即使买了会员，你也可以继续用直连方式（自己填密钥），或者完全不联网、只在本机记录。</div></div>
-</div>
-
-<h3>3.3　我们不做的事</h3>
-<ul>
-  <li>不用你的录音、文字或撰写内容训练任何模型，也不提供给任何一方用于训练。</li>
-  <li>不做用户画像，不做广告投放，不向任何人出售或出租你的个人信息。</li>
-  <li>不因为你不授权而拒绝提供与授权无关的功能。</li>
-</ul>
-
-<h2 id="third">四、第三方与委托处理</h2>
-<p>念记只接入<strong>在中华人民共和国境内运营</strong>的模型服务。下表是我们可能委托处理或向其发送数据的服务，具体以你在 App 内选择的为准：</p>
-<div class="rows">
-  <div class="row"><div class="k">千问（阿里云百炼）</div><div class="v">语音转写，出厂预填地址，直连模式下需要你自己的密钥。<span class="sub">处理目的：把音频转成文字。处理方式：HTTPS 接口调用。信息种类：音频、模型参数。</span></div></div>
-  <div class="row"><div class="k">DeepSeek</div><div class="v">回顾与提示词总结，出厂预填地址，需要你自己的密钥。<span class="sub">处理目的：生成当日回顾与提示词。信息种类：当天文字。</span></div></div>
-  <div class="row"><div class="k">会员套餐内的模型服务</div><div class="v">会员代转时由我们委托调用，可能包括上述服务，或同类境内语音与大模型服务。<span class="sub">处理目的与信息种类同上。上线时我们会在 App 内列出当期实际使用的服务名称与隐私政策链接，改变服务商时提前告知。</span></div></div>
-  <div class="row"><div class="k">Apple</div><div class="v">支付与应用分发。<span class="sub">订阅付款、续订、退款由 Apple 处理，我们只收到交易标识与订阅状态，接触不到你的支付方式。适用 Apple 的隐私政策。</span></div></div>
-</div>
-<p><strong>委托处理：</strong>对上述服务商，我们只提供完成该次请求所必需的内容，不提供你的身份信息。我们会要求其按约定目的处理，不得超范围使用。</p>
-<p><strong>共享：</strong>除下列情形，我们不与任何第三方共享你的个人信息：（1）取得你的单独同意；（2）为完成你主动发起的转写或撰写，向你在 App 内选定的服务商发送必要内容；（3）法律法规规定、诉讼或司法机关依法要求。</p>
-<p><strong>境内处理：</strong>我们不向中华人民共和国境外提供你的个人信息。如果你自行把接口地址填写为境外服务器，那是你本人直接向该服务器发送数据，我们不参与、不中转、也不知情；请自行确认该服务的合规安排。</p>
-<div class="warn"><strong>关于第三方 AI 的明确许可：</strong>依据 Apple 审核指南 5.1.2，在把你的内容发送给任何第三方 AI 之前，我们会在 App 内明确告诉你接收方是谁、发送什么、用于什么，并取得你的明确许可。你可以在设置里随时关闭，关闭后不再发送。</div>
-
-<h2 id="member">五、账号、会员与支付</h2>
-<div class="rows">
-  <div class="row"><div class="k">当前版本</div><div class="v">不需要注册，没有账号，也没有密码。</div></div>
-  <div class="row"><div class="k">会员上线后</div><div class="v">购买套餐时会生成一个会员标识，用来绑定你的订阅状态和用量。我们不会因此向你索取身份证、住址或通讯录。<span class="sub">如果将来某种支付方式必须用到手机号，我们会在使用前单独说明并单独征求同意。</span></div></div>
-  <div class="row"><div class="k">价格与续订</div><div class="v">套餐价格、包含的内容与周期，以 App 内和 App Store 页面显示为准。自动续订会在到期前按 Apple 的规则扣款，你可以随时在 iOS「设置 → Apple ID → 订阅」里取消。</div></div>
-  <div class="row"><div class="k">退款</div><div class="v">退款由 Apple 按 App Store 规则处理，我们无权代扣或代退。</div></div>
-  <div class="row"><div class="k">注销</div><div class="v">会员账号可以在 App 内直接注销，不需要发邮件申请。注销后我们删除会员标识、订阅关联与用量记录，法律法规要求留存的部分除外。</div></div>
-</div>
-
-<h2 id="perm">六、系统权限</h2>
-<div class="rows">
-  <div class="row"><div class="k">麦克风</div><div class="v">只在你按下闪念或开启全天记录时使用。不录音时不监听、不采集。</div></div>
-  <div class="row"><div class="k">语音识别</div><div class="v">仅在云端没有返回文字、需要本机补转时调用。若你在系统设置中不允许，念记照常保留原音，只是不做补转。</div></div>
-  <div class="row"><div class="k">本地网络</div><div class="v">只有当你把接口地址填成局域网服务器时，才会用它连接该服务器。我们不扫描网络，不探测其他设备。</div></div>
-  <div class="row"><div class="k">后台音频</div><div class="v">用于全天记录在锁屏或切到其他 App 后继续录音。不用于其他目的。</div></div>
-</div>
-<p>念记不申请通知、位置、通讯录、相册、日历、健康数据等权限。权限弹窗只在你要用到对应功能时出现，不会在启动第一屏就索要。</p>
-
-<h2 id="keep">七、保存期限</h2>
-<div class="rows">
-  <div class="row"><div class="k">录音临时文件</div><div class="v">转写成功写入资料库后自动删除；服务拒收或等待补转时保留原音，直到重试成功或你手动清除。</div></div>
-  <div class="row"><div class="k">文字、卡片、回顾</div><div class="v">一直保留，直到你删除。没有自动过期。</div></div>
-  <div class="row"><div class="k">密钥与配置</div><div class="v">保留到你删除或卸载 App。</div></div>
-  <div class="row"><div class="k">会员用量与计费记录</div><div class="v">保存 12 个月，用于对账、争议处理与安全审计，到期自动删除；法律另有要求的按法定期限。</div></div>
-  <div class="row"><div class="k">代转的内容</div><div class="v">不保存。请求结束即从内存丢弃，没有留存期限可言。</div></div>
-</div>
-
-<h2 id="delete">八、删除与注销</h2>
-<ul>
-  <li><strong>删除单条：</strong>在「资料库」里逐条删除，原音与文字一起清除。</li>
-  <li><strong>删除全部：</strong>删除 App 即清除沙盒内的全部录音与文字。</li>
-  <li><strong>注销会员账号：</strong>在 App 内「设置 → 会员 → 注销」完成，不设人工审核门槛。</li>
-  <li><strong>导出过的副本：</strong>如果你导出到「文件」App、iCloud Drive、Obsidian 或其他网盘，需要你在那些位置自行删除。</li>
-  <li><strong>没有副本可删：</strong>直连模式下我们不保存任何内容；会员代转模式下内容不落盘，只有不含正文的计费记录，注销时一并删除。</li>
-</ul>
-
-<h2 id="rights">九、你的权利</h2>
-<p>依据《个人信息保护法》，你有权查阅、复制、更正、补充、删除你的个人信息，撤回同意，要求解释说明，并在我们拒绝时向监管部门投诉。由于数据大多就在你的设备上，这些权利基本可以直接在 App 内行使：</p>
-<ul>
-  <li>查阅与复制：在资料库阅读，或导出 Markdown 与完整备份。</li>
-  <li>更正与删除：逐条编辑或删除；删除 App 即全部清除。</li>
-  <li>撤回同意：删除接口地址与密钥即停止外发；在系统设置里收回麦克风、语音识别权限即停止采集；会员可以在 App 内关闭代转。</li>
-  <li>注销账号：App 内直接完成。</li>
-  <li>解释说明：对本政策有疑问，发邮件问我们。</li>
-</ul>
-<p>我们会在 15 个工作日内答复。你也可以向网信、工信、市场监管等主管部门投诉，或通过 12321 网络不良与垃圾信息举报受理中心反映。</p>
-
-<h2 id="kids">十、未成年人</h2>
-<p>念记不面向 14 周岁以下的儿童，也不会主动收集儿童的个人信息。若未成年人使用，应在监护人的同意和指导下进行。录音可能录到在场其他人（包括儿童）的声音，请在使用前取得他们的同意。</p>
-
-<h2 id="sec">十一、安全与事件通知</h2>
-<ul>
-  <li><strong>传输：</strong>只接受 HTTPS 地址，使用系统证书校验，拒绝明文连接。</li>
-  <li><strong>密钥：</strong>直连模式的密钥只存在 iOS 钥匙串，标记为「仅本设备、首次解锁后可读」，不随设备备份迁移。</li>
-  <li><strong>会员服务器：</strong>内容只在内存中转发；访问需要服务端鉴权；运维人员没有查看内容的入口，日志不记录正文。</li>
-  <li><strong>最小化：</strong>不集成第三方 SDK，不含广告、追踪与统计代码，不索取与功能无关的信息。</li>
-  <li><strong>事件通知：</strong>如果发生个人信息泄露、篡改或丢失，我们会立即采取补救措施，并按《个人信息保护法》第五十七条通知你和监管部门，说明涉及的信息种类、可能的影响、我们采取的措施以及你可以做的防护。</li>
-</ul>
-
-<h2 id="update">十二、政策更新</h2>
-<p>本政策会随功能变化更新，更新后我们改本页顶部的「最后更新」日期，历史版本可以发邮件索取。</p>
-<p>涉及处理目的、信息种类、接收方或使用方式的<strong>重大变更</strong>，我们会在 App 内以弹窗等显著方式通知你，并在变更生效前重新取得你的同意；你不同意，可以继续使用不受影响的功能，或注销账号。</p>
-
-<h2 id="contact">十三、联系我们</h2>
-<div class="rows">
-  <div class="row"><div class="k">个人信息处理者</div><div class="v">深圳美若轻生物科技有限公司（MEIRUOQING）</div></div>
-  <div class="row"><div class="k">隐私与支持邮箱</div><div class="v"><a href="mailto:postmaster@meiruoqing.com">postmaster@meiruoqing.com</a></div></div>
-  <div class="row"><div class="k">答复时限</div><div class="v">15 个工作日内</div></div>
-</div>
-<p>如果你的问题涉及千问、DeepSeek 或其他第三方服务本身（例如它的保存期限、是否用于训练），请同时联系该服务商；我们无法代其答复，也读取不到你与它之间的数据。</p>
-<p class="meta">本政策自 2026年11月25日 起生效。最后更新：2026年11月25日。版本 1.2.6（24）。</p>
-</main>
-<footer><div class="in">
-<p>深圳美若轻生物科技有限公司　MEIRUOQING · 念记 1.2.6（24）</p>
-<p>联系邮箱：<a href="mailto:postmaster@meiruoqing.com">postmaster@meiruoqing.com</a></p>
-<p>本站地址：https://legal.meiruoqing.com</p>
-<p style="margin-top:14px">本页为纯静态网页，不设置 Cookie，不加载任何外部资源，不记录访问行为。</p>
-</div></footer>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="美若清首页">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 4h14a8 8 0 0 1 8 8v16H13a8 8 0 0 1-8-8V4Z" stroke="currentColor" stroke-width="1.5"/><path d="M11 15v5m5-10v13m5-9v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span lang="zh-CN">美若清</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+      <nav class="site-nav" id="site-nav" aria-label="主要导航">
+        <a href="index.html">念记</a>
+        <a href="privacy.html" aria-current="page">隐私政策</a>
+        <a href="support.html">支持</a>
+        <a href="about.html">关于</a>
+        <a class="language" href="en.html" lang="en" hreflang="en">English</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <header class="page-heading">
+      <p class="eyebrow">念记 · 数据与隐私</p>
+      <h1>隐私政策</h1>
+      <p class="lead">先说明白：资料在哪里，什么时候会离开设备，以及怎样把它们带走或删除。</p>
+      <p class="note">更新日期：<time datetime="2026-11-25">2026 年 11 月 25 日</time></p>
+    </header>
+    <div class="document-layout">
+      <nav class="toc" aria-label="隐私政策目录">
+        <strong>本页内容</strong>
+        <a href="#scope">适用范围</a><a href="#recordings">录音与转写</a><a href="#cloud">可选云端模型</a><a href="#organizing">回顾与整理</a><a href="#transfers">导入、手表与导出</a><a href="#deletion">保存与删除</a><a href="#permissions">权限与使用原则</a><a href="#website">官网与支持邮件</a><a href="#contact">联系与更新</a>
+      </nav>
+      <div class="prose">
+        <div class="callout"><strong>录音与文字保存在你自己的设备上。我们没有任何服务器接收你的录音和文字。云端模型是可选项，是否使用、使用哪一家服务，由你决定。</strong></div>
+        <section id="scope"><h2>一、适用范围</h2>
+          <p>本政策适用于美若清提供的念记 iPhone 与 Apple Watch App，以及本官网。美若清的运营主体为深圳美若轻生物科技有限公司，所在地为深圳。</p>
+          <p>念记把你主动记录的闪念、全天录音和导入的文字整理为个人资料。本政策说明这些内容如何被处理，以及你可以如何管理。</p>
+        </section>
+        <section id="recordings"><h2>二、录音、本机转写与原音回听</h2>
+          <p>你发起闪念或全天录音并授予麦克风权限后，念记会记录声音。全天录音支持按 10、20 或 30 分钟自动分段保存；已经保存的分段，不会因后续录音中断而一并丢失。录音可能包含他人的声音，请尊重相关人员的知情与隐私。</p>
+          <p>录音与文字存放在你的手机上。念记支持直接在手机上转写，提供全天逐字稿和部分逐字稿，失败的分段可以单独重新转写。使用本机转写时，不需要把录音发送给我们。</p>
+          <p>逐字稿的段落与原音关联，便于回听核对。清掉原音后，文字仍会保留；对应的原音将无法继续回听。</p>
+        </section>
+        <section id="cloud"><h2>三、你选择使用云端模型时</h2>
+          <p>云端模型不是必选项。你可以自行填写服务配置；执行云端转写或其他云端处理时，相关录音或文字会发送给你配置的服务提供方，而非美若清的数据服务器。</p>
+          <p><strong>API Key 保存在这台设备的系统钥匙串中</strong>，用于你配置服务的请求鉴权。我们不代为保管你的密钥。本机保存密钥，不意味着请求鉴权时无需向你选择的服务发送凭据。</p>
+          <p>请在使用前了解服务商的数据用途、保存期限、处理地点与删除方式。第三方服务的数据处理适用其自身政策；如果不想继续使用，请停止相关云端操作并管理或移除服务配置。已经发送的内容需要按该服务商的规则处理。</p>
+        </section>
+        <section id="organizing"><h2>四、回顾、整理与个人积累</h2>
+          <p>念记根据你的记录提供当日回顾、完整回顾、时段详情与时间线，支持查看当日、上一天、下一天，以及近一周和近一月。</p>
+          <p>可执行提示词、定向总结、“我的模板”、每日“善念与你”、一段时间的心情趋势，以及收藏与精选，均用于整理和回看你的个人记录。相关资料保留在你自己的设备上；需要云端服务参与的处理，由你选择和配置。</p>
+          <p>当你把生成的提示词复制到其他 AI 或应用时，相关内容会由你选择的工具接收，其后续处理适用该工具的政策。</p>
+        </section>
+        <section id="transfers"><h2>五、历史资料、Apple Watch 与导出</h2>
+          <p>你可以导入 Markdown 或纯文本，将历史资料纳入知识库，与今天的记录一起检索和回顾。</p>
+          <p>Apple Watch 可以单独录音。回到 iPhone 附近并具备传输条件时，录音会自动交给手机转写和处理。设备间交接不经过美若清的录音存储服务器。</p>
+          <p>念记支持导出完整备份、某天的原文 Markdown 和逐字稿，文字按天自动归档为文件夹。导出文件由你选择保存位置；复制到其他设备、云盘或应用后的副本，需要在相应位置另行管理。</p>
+        </section>
+        <section id="deletion"><h2>六、保存、删除与副本管理</h2>
+          <p>资料由你保管。删除前，请先导出需要保留的内容，并确认导出文件可以正常打开。只清掉原音会保留文字；如需移除本机 App 数据，可以使用 iOS 的“删除 App”操作。“从主屏幕移除”或“卸载 App”不等同于删除全部 App 数据。</p>
+          <p>删除手机上的 App，不会自动清除已导出的文件、其他设备副本或已有系统备份。请分别检查 Apple Watch、文件保存位置和使用过的备份服务，并删除其中不再需要的资料。若系统备份包含念记内容，其管理和删除遵循相应系统或服务的规则。</p>
+          <p>API Key 也需要单独处理，不应只依赖删除 App 来清除钥匙串项目。需要立即使密钥失效时，请在对应模型服务商处撤销密钥。已发送到第三方的内容，请按该服务商的规则申请处理。</p>
+          <p>我们没有你的录音与文字服务器副本，无法从服务器替你恢复已经删除的本机资料。</p>
+        </section>
+        <section id="permissions"><h2>七、权限与数据使用原则</h2>
+          <p>麦克风权限用于你主动发起的录音。你可以在系统设置中随时撤销权限；撤销后，相关录音功能将无法使用。</p>
+          <p><strong>我们不出售你的个人数据，不做用户画像，也不把你的个人记录用于广告投放。</strong>念记无订阅、无内购、无广告。你自行配置的第三方服务可能另行收费，具体由该服务商决定。</p>
+          <p>请妥善保护设备解锁凭据与 API Key。共享设备或导出文件前，请检查其中是否包含不希望公开的内容。</p>
+        </section>
+        <section id="website"><h2>八、官网访问与支持邮件</h2>
+          <p>本官网是静态网站，未加入广告、访问分析脚本、追踪 Cookie 或资料上传表单。网站托管服务商可能为提供访问服务处理必要的网络信息；这与念记 App 录音和文字的本机保存相互独立。</p>
+          <p>你主动通过邮件联系时，我们会收到你的邮箱地址和邮件内容，用于处理相关咨询。请不要发送 API Key、设备密码或不必要的完整录音；需要处理支持邮件中的个人信息时，可通过同一邮箱联系我们。</p>
+        </section>
+        <section id="contact"><h2>九、联系与政策更新</h2>
+          <p>有关隐私、数据管理或删除的问题，请联系美若清：<a href="mailto:yzy@meiruoqing.com">yzy@meiruoqing.com</a>。所在地：深圳。</p>
+          <p>如产品的数据处理方式发生变化，我们会在本页公布修订后的政策与更新日期。</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="index.html" lang="zh-CN">美若清</a>
+          <p>深圳 · 个人记录产品</p>
+          <a href="mailto:yzy@meiruoqing.com">yzy@meiruoqing.com</a>
+        </div>
+        <nav class="footer-links" aria-label="页脚导航">
+          <a href="privacy.html">隐私政策</a>
+          <a href="support.html">支持</a>
+          <a href="about.html">关于美若清</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span lang="zh-CN">© <span data-year>2026</span> 美若清 · 深圳美若轻生物科技有限公司</span>
+        <span>文字由你保管。</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
