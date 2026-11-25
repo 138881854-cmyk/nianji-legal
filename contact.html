@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>联系与留言 — 念记 · 美若清</title>
+  <meta name="description" content="给美若清念记团队留言：使用问题、上线通知、隐私与数据、合作咨询。留言由你自己的邮件客户端发出，不经过任何美若清服务器。">
+  <meta property="og:title" content="联系与留言 — 念记 · 美若清">
+  <meta property="og:description" content="给美若清念记团队留言：使用问题、上线通知、隐私与数据、合作咨询。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="美若清">
+  <meta name="theme-color" content="#f8f6f0">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="美若清首页">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 4h14a8 8 0 0 1 8 8v16H13a8 8 0 0 1-8-8V4Z" stroke="currentColor" stroke-width="1.5"/><path d="M11 15v5m5-10v13m5-9v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span lang="zh-CN">美若清</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+      <nav class="site-nav" id="site-nav" aria-label="主要导航">
+        <a href="index.html">念记</a>
+        <a href="privacy.html">隐私政策</a>
+        <a href="support.html">支持</a>
+        <a href="contact.html" aria-current="page">联系</a>
+        <a href="about.html">关于</a>
+        <a class="language" href="en.html" lang="en" hreflang="en">English</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="wrap hero" aria-labelledby="contact-heading">
+      <div>
+        <p class="eyebrow">联系 · 留言</p>
+        <h1 id="contact-heading">有话，写信给我们。</h1>
+        <p class="lead">使用中的问题、上线通知、隐私与数据方面的疑问，或者合作咨询，都可以从这里写给我们。</p>
+      </div>
+      <div class="ownership">
+        <p><strong>邮箱</strong><a href="mailto:yzy@meiruoqing.com">yzy@meiruoqing.com</a></p>
+        <p><strong>会在什么时候回</strong>通常两个工作日内。上线通知类的留言，会在 App Store 开放下载时一并回复。</p>
+        <p><strong>请勿发送</strong>身份证件、医疗记录或其他敏感信息。咨询隐私相关问题时，说明你的疑问即可，不必附上原始记录内容。</p>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="form-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">留言</p><h2 id="form-heading">写下要说的话。</h2></div>
+        <p>填写后点击“生成邮件”，会在你自己的邮件客户端里打开一封写好的信。确认无误后，由你自己点发送。</p>
+      </div>
+
+      <form class="contact-form" id="contact-form" action="mailto:yzy@meiruoqing.com" method="get" enctype="text/plain">
+        <div class="form-field">
+          <label for="cf-name">怎么称呼你</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="40" required>
+        </div>
+        <div class="form-field">
+          <label for="cf-email">回信邮箱 <span class="label-hint">选填</span></label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="80" placeholder="方便我们回信时填，不填也可以">
+        </div>
+        <div class="form-field">
+          <label for="cf-topic">想说哪方面的事</label>
+          <select id="cf-topic" name="topic">
+            <option value="使用问题">使用问题</option>
+            <option value="上线通知">App 上线通知</option>
+            <option value="隐私与数据">隐私与数据</option>
+            <option value="合作咨询">合作咨询</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="cf-message">留言内容</label>
+          <textarea id="cf-message" name="message" rows="7" maxlength="1200" required placeholder="例如：全天录音在什么情况下会自动停止？"></textarea>
+        </div>
+        <div class="form-actions">
+          <button class="button" type="submit">生成邮件</button>
+          <button class="button button-ghost" type="button" id="cf-copy">复制内容</button>
+          <a class="text-link" href="mailto:yzy@meiruoqing.com">直接用邮件客户端写信</a>
+        </div>
+        <p class="form-note" id="cf-status" role="status" aria-live="polite">这个页面不会把内容发送到任何服务器。所有内容只在你的设备上，由你的邮件客户端发出。</p>
+      </form>
+
+      <noscript>
+        <p class="note">当前浏览器未启用 JavaScript。请直接写信到 <a href="mailto:yzy@meiruoqing.com">yzy@meiruoqing.com</a>，并注明想咨询的方面。</p>
+      </noscript>
+    </section>
+
+    <section class="wrap section split" aria-labelledby="privacy-note-heading">
+      <div>
+        <p class="eyebrow">关于这个表单</p><h2 id="privacy-note-heading">为什么没有“提交成功”回执。</h2>
+        <p class="lead">因为这里没有接收留言的服务器。表单只做一件事：把你写的内容整理成一封邮件，交给你的邮箱。</p>
+        <a class="text-link" href="privacy.html">阅读隐私政策</a>
+      </div>
+      <div class="ownership">
+        <p><strong>和隐私政策一致</strong>美若清没有服务器保存你的录音、文字或这里的留言。留言内容不经过我们的网站。</p>
+        <p><strong>你自己发出</strong>发送动作由你完成。发出之后，内容按你所用邮件服务商的方式保存和传输。</p>
+        <p><strong>不留表单记录</strong>这个页面不写 Cookie，也不保存你填写的内容。刷新或关闭页面后，填写内容即消失。</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="index.html" lang="zh-CN">美若清</a>
+          <p>深圳 · 个人记录产品</p>
+          <a href="mailto:yzy@meiruoqing.com">yzy@meiruoqing.com</a>
+        </div>
+        <nav class="footer-links" aria-label="页脚导航">
+          <a href="privacy.html">隐私政策</a>
+          <a href="support.html">支持</a>
+          <a href="contact.html">联系</a>
+          <a href="about.html">关于美若清</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span lang="zh-CN">© <span data-year>2026</span> 美若清 · 深圳美若轻生物科技有限公司</span>
+        <span>文字由你保管。</span>
+      </div>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var form = document.getElementById('contact-form');
+      var status = document.getElementById('cf-status');
+      var copy = document.getElementById('cf-copy');
+      if (!form) return;
+
+      function build() {
+        var name = (form.elements.name.value || '').trim();
+        var email = (form.elements.email.value || '').trim();
+        var topic = form.elements.topic.value;
+        var message = (form.elements.message.value || '').trim();
+        var subject = '【念记】' + topic + (name ? ' · ' + name : '');
+        var body = '称呼：' + name + '\n回信邮箱：' + (email || '（未填写）') + '\n方面：' + topic + '\n\n' + message + '\n\n--\n来自 legal.meiruoqing.com 留言入口';
+        return { subject: subject, body: body };
+      }
+
+      function mailto() {
+        var d = build();
+        return 'mailto:yzy@meiruoqing.com?subject=' + encodeURIComponent(d.subject) + '&body=' + encodeURIComponent(d.body);
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        window.location.href = mailto();
+        status.textContent = '已在你的邮件客户端里打开这封信。确认内容后，由你点发送。';
+        status.setAttribute('data-state', 'ok');
+      });
+
+      if (copy) {
+        copy.addEventListener('click', function () {
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+          var d = build();
+          var text = '收件人：yzy@meiruoqing.com\n主题：' + d.subject + '\n\n' + d.body;
+          function done(ok) {
+            status.textContent = ok
+              ? '已复制。粘贴到你的邮箱或其它工具里，发给 yzy@meiruoqing.com 即可。'
+              : '复制未成功。请手动选中内容复制，或直接用邮件客户端写信。';
+            status.setAttribute('data-state', ok ? 'ok' : 'warn');
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+          } else {
+            var ta = document.createElement('textarea');
+            ta.value = text;
+            ta.setAttribute('readonly', '');
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            var ok = false;
+            try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+            document.body.removeChild(ta);
+            done(ok);
+          }
+        });
+      }
+    }());
+  </script>
+</body>
+</html>
