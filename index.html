@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="robots" content="index,follow">
+<title>念记 NIANJI · 公开信息</title>
+<meta name="description" content="念记 App 的隐私政策与支持页面。录音与文字默认只保存在你的设备上。">
+<meta property="og:title" content="念记 NIANJI · 公开信息">
+<meta property="og:description" content="念记 App 的隐私政策与支持页面。录音与文字默认只保存在你的设备上。">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --ink:#0d0e10; --deep:#17191b; --paper:#eae9e6; --ivory:#f7f7f5;
+  --wine:#4d1422; --gold:#b7a691; --line:#26272a; --muted:#8d8e90;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--ink); color:var(--paper);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+  font-size:17px; line-height:1.85; letter-spacing:.01em;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(183,166,145,.35)}
+a:hover{border-bottom-color:var(--gold)}
+.top{border-bottom:1px solid var(--line)}
+.top .in{max-width:62ch; margin:0 auto; padding:20px 22px; display:flex; justify-content:space-between; gap:16px; align-items:baseline}
+.brand{font-size:13px; letter-spacing:.2em; color:var(--paper)}
+.brand span{color:var(--muted); letter-spacing:.16em; margin-left:10px; font-size:11px}
+.top nav{font-size:12.5px; letter-spacing:.04em; display:flex; gap:18px}
+.top nav a{border:0; color:var(--muted); padding:6px 0}
+.top nav a:hover{color:var(--paper)}
+main{max-width:62ch; margin:0 auto; padding:0 22px 40px}
+header.head{padding:56px 0 8px}
+.eyebrow{font-size:11.5px; letter-spacing:.22em; color:var(--gold); text-transform:uppercase; margin:0 0 22px}
+h1{font-size:clamp(34px,7.2vw,50px); line-height:1.08; letter-spacing:-.075em; font-weight:680; margin:0 0 18px}
+.stamp{font-size:13px; color:var(--muted); letter-spacing:.03em; margin:0}
+.lede{border-left:3px solid var(--wine); background:var(--deep); padding:20px 22px; margin:36px 0 0; font-size:16.5px; line-height:1.8}
+.lede p{margin:0}
+.lede strong{font-weight:650; color:var(--ivory)}
+h2{font-size:21px; line-height:1.35; letter-spacing:-.035em; font-weight:650; margin:56px 0 6px; padding-top:22px; border-top:1px solid var(--line)}
+h2:first-of-type{margin-top:44px}
+h3{font-size:16.5px; font-weight:650; letter-spacing:-.01em; margin:30px 0 4px}
+p{margin:14px 0 0}
+ul,ol{margin:14px 0 0; padding-left:20px}
+li{margin:8px 0}
+li::marker{color:var(--muted)}
+.rows{margin:20px 0 0; border-bottom:1px solid var(--line)}
+.row{display:grid; grid-template-columns:11.5rem 1fr; gap:18px; padding:16px 0; border-top:1px solid var(--line); align-items:start}
+.row .k{font-size:14.5px; font-weight:650; letter-spacing:-.01em; color:var(--ivory); line-height:1.6}
+.row .v{font-size:15.5px; line-height:1.8; color:var(--paper)}
+.row .v .sub{display:block; color:var(--muted); font-size:13.5px; margin-top:4px}
+.toc{margin:34px 0 0; padding:0; list-style:none; columns:2; column-gap:28px; font-size:14.5px}
+.toc li{margin:0 0 10px; break-inside:avoid}
+.toc a{border:0; color:var(--paper)}
+.toc a:hover{color:var(--gold)}
+.toc a::before{content:"— "; color:var(--muted)}
+.note{font-size:14px; color:var(--muted); line-height:1.8}
+.tag{display:inline-block; font-size:11.5px; letter-spacing:.12em; color:var(--gold); border:1px solid rgba(183,166,145,.4); padding:2px 8px; margin-left:10px; vertical-align:middle}
+footer{border-top:1px solid var(--line); margin-top:64px; padding:30px 0 72px; font-size:13px; color:var(--muted); line-height:1.85}
+footer .in{max-width:62ch; margin:0 auto; padding:0 22px}
+footer p{margin:6px 0 0}
+.cards{display:grid; gap:1px; background:var(--line); border:1px solid var(--line); margin:40px 0 0}
+.card{background:var(--ink); padding:26px 24px; display:block; border:0}
+.card:hover{background:var(--deep)}
+.card .t{font-size:19px; font-weight:650; letter-spacing:-.03em; color:var(--ivory); margin:0}
+.card .d{font-size:14.5px; color:var(--muted); margin:8px 0 0; line-height:1.7}
+.card .go{font-size:12px; letter-spacing:.16em; color:var(--gold); margin-top:16px; display:block}
+.warn{border:1px solid #3a2a2c; background:#141113; padding:18px 20px; margin:26px 0 0; font-size:15px; color:var(--paper)}
+.meta{font-size:13px; color:var(--muted); margin-top:8px}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .row{grid-template-columns:1fr; gap:6px}
+  .toc{columns:1}
+  header.head{padding-top:38px}
+  .top .in{flex-direction:column; gap:8px}
+  .top nav{gap:16px}
+}
+@media print{
+  body{background:#fff; color:#111; font-size:10.5pt; line-height:1.7}
+  .top{border-bottom:1px solid #ccc}
+  a{color:#111; border:0; text-decoration:underline}
+  .lede{background:#f4f4f2; border-left:3px solid #4d1422; color:#111}
+  .row{border-color:#ddd}
+  h2{border-color:#ccc; page-break-after:avoid}
+  .card{background:#fff}
+  .eyebrow{color:#4d1422}
+  footer{color:#555}
+}
+</style>
+</head>
+<body>
+<div class="top"><div class="in">
+  <a class="brand" href="./index.html" style="border:0;color:#eae9e6">念记<span>NIANJI</span></a>
+  <nav><a href="./privacy.html">隐私政策</a><a href="./support.html">支持</a></nav>
+</div></div>
+
+<main>
+<header class="head">
+  <p class="eyebrow">MEIRUOQING · NIANJI</p>
+  <h1>念记</h1>
+  <p class="stamp">把说过的话，整理成能长期带走的文字。</p>
+</header>
+<div class="lede"><p>本页是 念记 的公开信息页，供 App Store 审核与用户查阅。念记不注册也能用，没有我们的服务器；录音与文字默认只保存在你的设备上。</p></div>
+<div class="cards">
+  <a class="card" href="./privacy.html"><p class="t">隐私政策</p><p class="d">我们处理哪些信息、录音去了哪里、会员代转怎么处理、怎么删除、怎么联系我们。</p><span class="go">查看 →</span></a>
+  <a class="card" href="./support.html"><p class="t">支持</p><p class="d">常见问题、数据迁移、会员与退款、故障排查与联系方式。</p><span class="go">查看 →</span></a>
+</div>
+<h2>联系</h2>
+<p>邮箱：<a href="mailto:postmaster@meiruoqing.com">postmaster@meiruoqing.com</a>　·　开发者：深圳美若轻生物科技有限公司（MEIRUOQING）</p>
+<p class="note">最后更新：2026年11月25日</p>
+</main>
+<footer><div class="in">
+<p>深圳美若轻生物科技有限公司　MEIRUOQING · 念记 1.2.6（24）</p>
+<p>联系邮箱：<a href="mailto:postmaster@meiruoqing.com">postmaster@meiruoqing.com</a></p>
+
+<p style="margin-top:14px">本页为纯静态网页，不设置 Cookie，不加载任何外部资源，不记录访问行为。</p>
+</div></footer>
+</body>
+</html>
