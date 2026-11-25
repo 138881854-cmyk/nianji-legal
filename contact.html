@@ -133,7 +133,7 @@
       function build() {
         var name = (form.elements.name.value || '').trim();
         var email = (form.elements.email.value || '').trim();
-        var topic = form.elements.topic.value;
+        var topic = form.elements.topic.value || '留言';
         var message = (form.elements.message.value || '').trim();
         var subject = '【念记】' + topic + (name ? ' · ' + name : '');
         var body = '称呼：' + name + '\n回信邮箱：' + (email || '（未填写）') + '\n方面：' + topic + '\n\n' + message + '\n\n--\n来自 legal.meiruoqing.com 留言入口';
@@ -170,20 +170,26 @@
               : '复制未成功。请手动选中内容复制，或直接用邮件客户端写信。';
             status.setAttribute('data-state', ok ? 'ok' : 'warn');
           }
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
-          } else {
+          function fallbackCopy(value) {
             var ta = document.createElement('textarea');
-            ta.value = text;
+            ta.value = value;
             ta.setAttribute('readonly', '');
             ta.style.position = 'fixed';
+            ta.style.top = '0';
             ta.style.opacity = '0';
             document.body.appendChild(ta);
+            ta.focus();
             ta.select();
+            ta.setSelectionRange(0, value.length);
             var ok = false;
             try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
             document.body.removeChild(ta);
-            done(ok);
+            return ok;
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(fallbackCopy(text)); });
+          } else {
+            done(fallbackCopy(text));
           }
         });
       }
